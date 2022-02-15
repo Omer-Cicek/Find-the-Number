@@ -1,9 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   height: 100vh;
   background: linear-gradient(to left, #85c4bf, #bb6464);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px red solid;
+  width: 66%;
+  height: 50%;
+  text-align: center;
+}
+.container__input-arrows {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px red solid;
+  align-items: center;
+  height: 50%;
+}
+.container__p-highScore {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px red solid;
+}
+.input-button {
+  display: flex;
+  flex-direction: row;
+  border: 1px red solid;
+  justify-content: center;
+  width: 60%;
+  height: 35px;
+}
+.numberInput {
+  width: 60%;
+}
+.arrow-up,
+.arrow-down {
+  transform: scale(5);
+}
+.arrows {
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
 }
