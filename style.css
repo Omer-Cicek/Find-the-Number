@@ -32,9 +32,10 @@ body {
   height: 50%;
 }
 .container__p-highScore {
+  height: 20%;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   border: 1px red solid;
 }
@@ -50,13 +51,20 @@ body {
   width: 60%;
 }
 .arrow-up,
-.arrow-down {
+.tick,
+.arrow-down,
+.question-mark {
   transform: scale(5);
+  border: none;
+  outline: none;
 }
 .arrows {
-  border: 1px red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 50%;
+}
+.againBtn {
+  width: 30%;
+  height: 33px;
 }
