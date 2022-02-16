@@ -7,10 +7,15 @@ const tick = document.querySelector('.tick');
 const againButton = document.querySelector('.againBtn');
 const questionMark = document.querySelector('.question-mark');
 const scoreUser = document.querySelector('.scoreUser');
+const highScoreP = document.querySelector('.highScoreP');
 
 let randomNumber = Math.floor(Math.random() * 100);
 let userScore = 20;
-let highScore = 0;
+let highScore = [0];
+
+function sorting(myArray) {
+  return myArray.sort((a, b) => a - b);
+}
 
 const checkFunc = () => {
   if (
@@ -45,9 +50,13 @@ const checkFunc = () => {
       arrowUp.style.display = 'none';
       tick.style.display = 'block';
       questionMark.style.display = 'none';
+      highScore.push(userScore);
+      sorting(highScore);
       userScore == 0;
       inputButton.disabled = true;
-      if (userScore >= highScore) highScore == userScore;
+      highScoreP.innerText = `Your HighScore is: ${
+        highScore[highScore.length - 1]
+      }`;
     }
     scoreUser.innerText = `Your score is ${userScore}`;
     if (userScore == 0) {

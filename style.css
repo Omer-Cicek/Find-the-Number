@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px red solid;
   width: 66%;
   height: 50%;
   text-align: center;
@@ -27,7 +26,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: 1px red solid;
   align-items: center;
   height: 50%;
 }
@@ -37,12 +35,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 1px red solid;
 }
 .input-button {
   display: flex;
   flex-direction: row;
-  border: 1px red solid;
   justify-content: center;
   width: 60%;
   height: 35px;
@@ -65,6 +61,6 @@ body {
   height: 50%;
 }
 .againBtn {
-  width: 30%;
-  height: 33px;
+  width: 10%;
+  height: 35px;
 }
